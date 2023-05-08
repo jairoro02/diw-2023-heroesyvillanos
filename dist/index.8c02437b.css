@@ -29,6 +29,9 @@ a:link, a:visited, a:active {
 
 .header .logo {
   width: 4%;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
 }
 
 .header .logo img {
@@ -37,7 +40,7 @@ a:link, a:visited, a:active {
 
 .header .options {
   color: #fff;
-  width: 12%;
+  width: 20%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -57,7 +60,7 @@ a:link, a:visited, a:active {
 .header .user {
   color: #fff;
   align-self: center;
-  padding-right: 1.5%;
+  padding-right: 2%;
   font-size: 40px;
 }
 
@@ -78,7 +81,7 @@ a:link, a:visited, a:active {
   text-align: center;
   font-size: 70px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -120,6 +123,46 @@ a:link, a:visited, a:active {
 
 .daily-debate .commentary .comment h1 {
   padding-left: 2%;
+}
+
+.filters {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3%;
+  display: flex;
+}
+
+.filters .all-filters {
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
+.filters .all-filters .all-options {
+  width: 30%;
+  text-align: center;
+}
+
+.filters .all-filters .all-options .filter-options {
+  flex-direction: row;
+  display: flex;
+}
+
+.filters .all-filters .all-options .filter-options .filter-option {
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.filters .all-filters .all-options .filter-options .filter-option .marvel {
+  width: 100%;
+}
+
+.filters .all-filters .all-options .filter-options .filter-option img {
+  width: 70%;
 }
 
 /*# sourceMappingURL=index.8c02437b.css.map */

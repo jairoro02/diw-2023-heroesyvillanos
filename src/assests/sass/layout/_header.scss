@@ -1,11 +1,14 @@
 .header{
     display: flex;
     flex-direction: row;
-    background-color: #C51B1B;
+    background-color: $colorprincipal;
     align-items: center;
     justify-content: space-between;
     height: 80px;
     .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         width: 4%;
         img{
             width: 100%;
@@ -18,7 +21,7 @@
         color: white;
         justify-content: space-around;
         margin-left: 60%;
-        width: 12%;
+        width: 20%;
         .option{
             background-color: #9D1515;
             padding: 3%;
@@ -31,7 +34,7 @@
     .user{
         align-self: center;
         color: white;
-        padding-right: 1.5%;
+        padding-right: 2%;
         font-size: 40px;
     }
 }
