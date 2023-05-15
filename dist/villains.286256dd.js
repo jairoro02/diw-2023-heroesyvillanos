@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"fAKlG":[function(require,module,exports) {
+})({"3HQc3":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -558,6 +558,6 @@ function hmrAccept(bundle, id) {
 
 },{}],"gBpNF":[function(require,module,exports) {
 
-},{}]},["fAKlG","gBpNF"], "gBpNF", "parcelRequirec832")
+},{}]},["3HQc3","gBpNF"], "gBpNF", "parcelRequirec832")
 
 //# sourceMappingURL=villains.286256dd.js.map
