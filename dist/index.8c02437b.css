@@ -249,4 +249,8 @@ a:link, a:visited, a:active {
   padding-bottom: 5%;
 }
 
+.all-heroes .heroes .hero:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.8c02437b.css.map */
