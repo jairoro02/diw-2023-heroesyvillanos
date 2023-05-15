@@ -177,6 +177,10 @@ a:link, a:visited, a:active {
   text-align: center;
 }
 
+.filters .all-filters .all-options h1 {
+  padding-bottom: 2%;
+}
+
 .filters .all-filters .all-options .filter-options {
   flex-direction: row;
   display: flex;
@@ -190,12 +194,59 @@ a:link, a:visited, a:active {
   display: flex;
 }
 
+.filters .all-filters .all-options .filter-options .filter-option .dc {
+  filter: grayscale();
+}
+
 .filters .all-filters .all-options .filter-options .filter-option .marvel {
   width: 100%;
 }
 
 .filters .all-filters .all-options .filter-options .filter-option img {
   width: 70%;
+  filter: grayscale();
+  padding-bottom: 5%;
+  transition: filter .3s ease-in-out;
+}
+
+.filters .all-filters .all-options .filter-options .filter-option img:hover {
+  filter: none;
+}
+
+.all-heroes {
+  justify-content: center;
+  padding-top: 5%;
+  display: flex;
+}
+
+.all-heroes .heroes {
+  width: 80%;
+  flex-flow: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.all-heroes .heroes .hero {
+  width: 21.6667%;
+  background-image: url("marvel-fondo.337a961f.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+  display: flex;
+}
+
+.all-heroes .heroes .hero img {
+  height: 380px;
+  padding: 3%;
+}
+
+.all-heroes .heroes .hero h1 {
+  color: #fff;
+  padding-bottom: 5%;
 }
 
 /*# sourceMappingURL=index.8c02437b.css.map */

@@ -45,6 +45,10 @@
         .all-options{
             width: 30%;
             text-align: center;
+
+            h1{
+              padding-bottom: 2%;
+            }
             .filter-options{
                 display: flex;
                 flex-direction: row;
@@ -56,20 +60,59 @@
                     align-items: center;
                     width: 50%;
                     h1{
-                        
                     }
                     .dc{
-                   
+                      filter: grayscale(100%);
                     }
                     .marvel{
                         width: 100%;
                     }
+                    
                     img{
-                        width: 70%;
+                      width: 70%;
+                      padding-bottom:5%;
+                      filter: grayscale(100%);
+                      transition: filter 0.3s ease-in-out;
+                      &:hover {
+                        filter: none;
+                      }
                     }
                 }
             }
 
         }
     }
+}
+.all-heroes{
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  .heroes{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .hero{
+      display: flex;
+      flex-direction: column;
+      background-image: url("/src/assests/images/marvel-fondo.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: calc(25% - (10% / 3));
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4%;
+      img{
+        height: 380px;
+        padding: 3%;
+        
+      }
+      h1{
+        color: white;
+        padding-bottom: 5%;
+      }
+    }
+  }
 }
