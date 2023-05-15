@@ -213,20 +213,20 @@ a:link, a:visited, a:active {
   filter: none;
 }
 
-.all-heroes {
+.all-characters {
   justify-content: center;
   padding-top: 5%;
   display: flex;
 }
 
-.all-heroes .heroes {
+.all-characters .characters {
   width: 80%;
   flex-flow: wrap;
   justify-content: space-between;
   display: flex;
 }
 
-.all-heroes .heroes .hero {
+.all-characters .characters .character {
   width: 21.6667%;
   background-image: url("marvel-fondo.337a961f.jpg");
   background-position: center;
@@ -239,18 +239,22 @@ a:link, a:visited, a:active {
   display: flex;
 }
 
-.all-heroes .heroes .hero img {
+.all-characters .characters .character img {
   height: 380px;
   padding: 3%;
 }
 
-.all-heroes .heroes .hero h1 {
+.all-characters .characters .character h1 {
   color: #fff;
   padding-bottom: 5%;
 }
 
-.all-heroes .heroes .hero:hover {
+.all-characters .characters .character:hover {
   cursor: pointer;
+}
+
+.all-characters .characters .character.dc {
+  background-image: url("dc-fondo.335cf4b9.jpg");
 }
 
 /*# sourceMappingURL=index.8c02437b.css.map */

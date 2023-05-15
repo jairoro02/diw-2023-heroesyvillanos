@@ -83,17 +83,17 @@
         }
     }
 }
-.all-heroes{
+.all-characters{
   display: flex;
   justify-content: center;
   padding-top: 5%;
-  .heroes{
+  .characters{
     display: flex;
     flex-direction: row;
     width: 80%;
     justify-content: space-between;
     flex-wrap: wrap;
-    .hero{
+    .character{
       display: flex;
       flex-direction: column;
       background-image: url("/src/assests/images/marvel-fondo.jpg");
@@ -116,6 +116,9 @@
       &:hover{
         cursor: pointer;
       }
+    }
+    .character.dc{
+      background-image: url("/src/assests/images/dc-fondo.jpg");
     }
   }
 }
