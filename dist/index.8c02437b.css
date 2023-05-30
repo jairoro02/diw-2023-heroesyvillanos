@@ -267,6 +267,7 @@ a:link, a:visited, a:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 25px 0;
   flex-direction: column;
   align-items: center;
   margin-bottom: 6%;
@@ -523,6 +524,44 @@ a:link, a:visited, a:active {
 .main-register .form-register .button:hover {
   background-color: #901414;
   transition: all .5s;
+}
+
+.profile {
+  background-image: url("comic-fondo.f4fae985.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4%;
+  display: flex;
+}
+
+.profile .datos {
+  color: #fff;
+  background-color: #c51b1b;
+  border-radius: 25px 0;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1%;
+  padding: 2%;
+  font-family: Noto Serif, serif;
+  display: flex;
+}
+
+.profile .datos img {
+  width: 150px;
+  align-self: center;
+  padding-bottom: 5%;
+}
+
+.profile .favorito {
+  width: 80%;
+}
+
+.profile .favorito h1 {
+  padding-left: 10%;
+  font-family: Noto Serif, serif;
 }
 
 /*# sourceMappingURL=index.8c02437b.css.map */
