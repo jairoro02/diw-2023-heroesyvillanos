@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto+Condensed&display=swap";
 body {
   min-width: 360px;
   margin: 0;
@@ -30,7 +31,7 @@ a:link, a:visited, a:active {
 }
 
 .header .logo {
-  width: 20%;
+  width: 5%;
   flex-direction: row;
   align-items: center;
   font-size: 25px;
@@ -38,8 +39,8 @@ a:link, a:visited, a:active {
 }
 
 .header .logo img {
-  width: 85px;
-  padding-right: 1%;
+  height: 80px;
+  padding-right: 5%;
 }
 
 .header .options {
@@ -48,6 +49,7 @@ a:link, a:visited, a:active {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
   font-size: 25px;
   display: flex;
 }
@@ -75,6 +77,7 @@ a:link, a:visited, a:active {
 .daily-debate {
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
   display: flex;
   position: relative;
 }
@@ -171,7 +174,8 @@ a:link, a:visited, a:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 3% auto 0;
+  margin: 0 auto;
+  padding-top: 3%;
   font-family: Roboto Condensed, sans-serif;
   display: flex;
 }
@@ -227,11 +231,19 @@ a:link, a:visited, a:active {
 }
 
 .fondo {
-  z-index: -1;
-  width: 100%;
-  filter: grayscale();
-  opacity: .2;
-  position: absolute;
+  background-image: url("comic-fondo.f4fae985.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.fondito {
+  background-image: url("fondo-villano.6d9d3f8f.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
 }
 
 .all-characters {
@@ -244,20 +256,21 @@ a:link, a:visited, a:active {
   width: 80%;
   flex-flow: wrap;
   justify-content: space-between;
+  margin: 2% 3% 0;
   font-family: Roboto Condensed, sans-serif;
   display: flex;
 }
 
 .all-characters .characters .character {
-  width: 21.6667%;
+  width: 325px;
   background-image: url("marvel-fondo.337a961f.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 4%;
+  margin-bottom: 6%;
+  margin-right: 2%;
   display: flex;
 }
 
@@ -268,6 +281,7 @@ a:link, a:visited, a:active {
 
 .all-characters .characters .character h1 {
   color: #fff;
+  padding-top: 3%;
   padding-bottom: 5%;
 }
 
@@ -293,6 +307,7 @@ a:link, a:visited, a:active {
   width: 75%;
   flex-direction: column;
   margin: 0 auto;
+  padding-bottom: 50px;
   font-family: Roboto Condensed, sans-serif;
   display: flex;
 }
@@ -355,6 +370,81 @@ a:link, a:visited, a:active {
 .main-contact .form-contact a:hover {
   background-color: #901414;
   transition: all .5s;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #151515;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.footer nav {
+  padding-bottom: 1.5%;
+}
+
+.footer .footer-text {
+  color: #767676;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+.footer .footer-text:hover {
+  color: #a7a7a7;
+}
+
+.fondo-heroe {
+  height: 300px;
+  width: 100%;
+  filter: contrast(70%);
+  background-image: url("https://cdn.marvel.com/content/1x/002irm_com_mas_dsk_02.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 3%;
+}
+
+.one-character {
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: Roboto Condensed, sans-serif;
+  display: flex;
+}
+
+.one-character img {
+  height: 900px;
+}
+
+.one-character .description {
+  width: 35%;
+  height: 30%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  display: flex;
+}
+
+.one-character .description p {
+  background-color: #fff;
+  border: .5px solid #000;
+  padding: 4%;
+}
+
+.one-character .description h1 {
+  padding-bottom: 2%;
+  font-family: Noto Serif, serif;
+  font-size: 35px;
+}
+
+.one-character .description img {
+  height: 80px;
+  filter: contrast(80%);
+  padding-top: 5%;
 }
 
 /*# sourceMappingURL=index.8c02437b.css.map */

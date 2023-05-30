@@ -1,0 +1,46 @@
+.fondo-heroe{
+    background-image: url("https://cdn.marvel.com/content/1x/002irm_com_mas_dsk_02.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 3%;
+    filter: contrast(70%)
+}
+.one-character{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: $fuenteprincipal;
+    img{
+        height: 900px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        height: 30%;
+        margin-top: 10%;
+        p{
+          background-color: white;  
+          padding: 4%;
+          border: solid 0.5px black;
+        }
+        
+        
+        
+        h1{
+            padding-bottom: 2%;
+            font-family: $fuentenombre;
+            font-size: 35px;
+        }
+
+        img{
+            padding-top: 5%;
+            height: 80px;
+            filter: contrast(80%);
+        }
+    }
+}
