@@ -33,6 +33,7 @@
             </div>
         </div>
     </main>
+    <audio src="/The%20Killing%20Joke%20-%20Joker%27s%20Crazy%20Laugh.9d21214a.mp3" class="audio"></audio>
     <footer class="footer">
         <nav>
             <a href="#" class="footer-text">Terms of Use</a>
@@ -43,5 +44,13 @@
             <span class="footer-text">@2023 SuperHeroVerse</span>
         </nav>
     </footer>
+    <script>document.addEventListener("DOMContentLoaded", ()=>{
+    const audio = document.querySelector(".audio");
+    console.log(audio);
+    audio.volume = 0.5;
+    audio.play();
+});
+
+</script>
 <script src="/villain.ab627600.js"></script></body>
 </html>

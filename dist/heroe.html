@@ -36,6 +36,7 @@
             </div>
         </div>
     </main>
+    <audio src="/Sonido%20de%20Disparo%20Iron%20Man_PNgpYrmHbG4.0a305823.mp3" class="audio"></audio>
     <footer class="footer">
         <nav>
             <a href="#" class="footer-text">Terms of Use</a>
@@ -46,5 +47,13 @@
             <span class="footer-text">@2023 SuperHeroVerse</span>
         </nav>
     </footer>
+    <script>document.addEventListener("DOMContentLoaded", ()=>{
+    const audio = document.querySelector(".audio");
+    console.log(audio);
+    audio.volume = 0.5;
+    audio.play();
+});
+
+</script>
 <script src="/heroe.51e2dd7e.js"></script></body>
 </html>
