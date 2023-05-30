@@ -1,0 +1,76 @@
+.background-contact{
+    background-image: url("https://pbs.twimg.com/media/DlDyGdvU0AUJngg?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 3%;
+    filter: contrast(70%)
+}
+
+.main-contact{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: $fuenteprincipal;
+    h1{
+        padding-bottom: 2%;
+    }
+    
+    .form-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        width: 70%;    
+
+        .form-option{
+            display: flex;
+            flex-direction: column;
+            label{
+                padding-bottom: 1%;
+            }
+            input{
+                padding: 1%;
+                margin-bottom: 2%;
+                border-width: 0.5px;
+                border-style:solid;
+                border-color: #b8b1b1;
+                border-radius: 10px;
+                transition: all 0.5s;
+            }
+            input:focus{
+                outline-color: $colorprincipal;
+                transition: all 0.5s;
+            }
+            textarea{
+                border-width: 0.5px;
+                border-style:solid;
+                border-color: #b8b1b1;
+                border-radius: 10px;
+                transition: all 0.5s;
+            }
+            textarea:focus{
+                outline-color: $colorprincipal;
+                transition: all 0.5s;
+            }
+            
+        }
+        a{
+            display: flex;
+            background-color: $colorprincipal;
+            width: 15%;
+            padding: 1.5%;
+            margin-top: 2%;
+            justify-content: center;
+            border-radius: 0 0 0 25px;
+            transition: all 0.5s;
+
+        }
+        a:hover{
+            background-color: #901414;
+            transition: all 0.5s;
+        }
+
+    }
+}
