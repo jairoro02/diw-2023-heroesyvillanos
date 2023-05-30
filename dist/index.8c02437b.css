@@ -26,7 +26,7 @@ a:link, a:visited, a:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: Roboto Condensed, sans-serif;
+  font-family: Noto Serif, serif;
   display: flex;
 }
 
@@ -408,6 +408,16 @@ a:link, a:visited, a:active {
   margin-bottom: 3%;
 }
 
+.fondo-villano {
+  height: 300px;
+  width: 100%;
+  filter: contrast(70%);
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/69f90eed-5acf-4c96-b8eb-47e2795ff495/da4221s-5a92ee59-23c7-4fb3-88cc-bc3bfa8a8a78.jpg/v1/fill/w_1024,h_342,q_75,strp/joker_banner_by_remixsdesigns_da4221s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQyIiwicGF0aCI6IlwvZlwvNjlmOTBlZWQtNWFjZi00Yzk2LWI4ZWItNDdlMjc5NWZmNDk1XC9kYTQyMjFzLTVhOTJlZTU5LTIzYzctNGZiMy04OGNjLWJjM2JmYThhOGE3OC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KWciDQBMpytXUhonaYISos765WfoUXIOiDOkBKuYiHo");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 3%;
+}
+
 .one-character {
   width: 50%;
   justify-content: space-between;
@@ -445,6 +455,74 @@ a:link, a:visited, a:active {
   height: 80px;
   filter: contrast(80%);
   padding-top: 5%;
+}
+
+.main-register {
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15% auto;
+  display: flex;
+}
+
+.main-register h1 {
+  margin: 0 auto;
+}
+
+.main-register .form-register {
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-register .form-register .form-option {
+  flex-direction: column;
+  display: flex;
+}
+
+.main-register .form-register .form-option label {
+  padding-bottom: 1%;
+}
+
+.main-register .form-register .form-option input {
+  border: .5px solid #b8b1b1;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 1%;
+  transition: all .5s;
+}
+
+.main-register .form-register .form-option input:focus {
+  outline-color: #c51b1b;
+  transition: all .5s;
+}
+
+.main-register .form-register .link-login {
+  color: #00f;
+  transition: all .5s;
+}
+
+.main-register .form-register .link-login:hover {
+  color: #343434;
+  transition: all .5s;
+}
+
+.main-register .form-register .button {
+  width: 15%;
+  background-color: #c51b1b;
+  border-radius: 0 0 0 25px;
+  justify-content: center;
+  margin-top: 2%;
+  padding: 1.5%;
+  transition: all .5s;
+  display: flex;
+}
+
+.main-register .form-register .button:hover {
+  background-color: #901414;
+  transition: all .5s;
 }
 
 /*# sourceMappingURL=index.8c02437b.css.map */
