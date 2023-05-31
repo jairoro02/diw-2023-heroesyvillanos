@@ -17,6 +17,7 @@
     padding-bottom: 50px;
     h1{
         padding-bottom: 2%;
+        transition: all 600ms;
     }
     
     .form-contact{
@@ -24,7 +25,7 @@
         flex-direction: column;
         justify-content: space-between; 
         width: 70%;    
-
+        transition: all 600ms;
         .form-option{
             display: flex;
             flex-direction: column;
@@ -60,7 +61,7 @@
         a{
             display: flex;
             background-color: $colorprincipal;
-            width: 15%;
+            width: 108px;
             padding: 1.5%;
             margin-top: 2%;
             justify-content: center;
@@ -73,5 +74,32 @@
             transition: all 0.5s;
         }
 
+    }
+}
+
+@media(max-width:707px){
+    .main-contact{
+        h1{
+            font-size: 25px;
+            margin: 0 auto;
+            transition: all 600ms;
+        }
+        
+        .form-contact{
+            margin: 0 auto;
+            width: 90%;
+            transition: all 600ms;
+            .form-option{
+
+            }
+            a{
+
+    
+            }
+            a:hover{
+
+            }
+    
+        }
     }
 }

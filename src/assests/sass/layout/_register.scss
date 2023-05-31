@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    transition: all 600ms;
     h1{
         margin: 0 auto;
     }
@@ -61,7 +62,12 @@
     }
 }
 
-
+@media(max-width:1275px){
+    .main-register{
+        height: 625px;
+        transition: all 600ms;
+    }
+}
     
     
 
