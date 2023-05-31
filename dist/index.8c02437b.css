@@ -22,12 +22,12 @@ a:link, a:visited, a:active {
 }
 
 .header {
-  height: 80px;
   background-color: #c51b1b;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-family: Noto Serif, serif;
+  transition: all .6s;
   display: flex;
 }
 
@@ -36,12 +36,14 @@ a:link, a:visited, a:active {
   flex-direction: row;
   align-items: center;
   font-size: 25px;
+  transition: all .6s;
   display: flex;
 }
 
 .header .logo img {
   height: 80px;
   padding-right: 5%;
+  transition: all .6s;
 }
 
 .header .options {
@@ -52,11 +54,13 @@ a:link, a:visited, a:active {
   align-items: center;
   margin: 0 auto;
   font-size: 25px;
+  transition: all .6s;
   display: flex;
 }
 
 .header .options .option {
   cursor: pointer;
+  transition: all .6s;
 }
 
 .header .options .option:hover {
@@ -73,11 +77,110 @@ a:link, a:visited, a:active {
   align-self: center;
   padding-right: 2%;
   font-size: 40px;
+  transition: all .6s;
 }
 
-.video {
+@media (width <= 1000px) {
+  .header .options {
+    margin: 0;
+    transition: all .6s;
+  }
+
+  .header .options .option {
+    font-size: 18px;
+    transition: all .6s;
+  }
+
+  .header .logo {
+    width: 20%;
+    font-size: 18px;
+    transition: all .6s;
+  }
+
+  .header .user {
+    font-size: 30px;
+    transition: all .6s;
+  }
+}
+
+@media (width <= 735px) {
+  .header {
+    flex-wrap: wrap;
+    transition: all .6s;
+  }
+
+  .header .options {
+    width: 215px;
+    transition: all .6s;
+  }
+
+  .header .logo {
+    width: 242px;
+    transition: all .6s;
+  }
+
+  .header .logo img {
+    padding-right: 0;
+    transition: all .6s;
+  }
+
+  .header .user {
+    width: 32px;
+    padding-right: 1%;
+    transition: all .6s;
+  }
+}
+
+@media (width <= 455px) {
+  .header .logo {
+    margin: 0 auto;
+    transition: all .6s;
+  }
+
+  .header .logo img {
+    height: 60px;
+    transition: all .6s;
+  }
+
+  .header .user {
+    margin-right: 2%;
+    transition: all .6s;
+  }
+}
+
+.fondito.index {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.fondito.index h1 {
+  padding-top: 2.5%;
+  padding-bottom: 1.5%;
+  font-family: Roboto Condensed, sans-serif;
+  font-size: 60px;
+}
+
+.fondito.index .video {
   justify-content: center;
   display: flex;
+}
+
+.fondito.index .info {
+  width: 1280px;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-top: 4%;
+  font-family: Roboto Condensed, sans-serif;
+  display: flex;
+}
+
+.fondito.index .info .data {
+  width: 30%;
+  background-color: #fff;
+  border: .5px solid #000;
+  padding: 2%;
+  font-size: 17px;
 }
 
 .search-container {
