@@ -16,6 +16,7 @@
     border-radius: 3px;
     font-size: 14px;
     padding: 8px;
+    transition: all 600ms;
   }
   
   .search-button {
@@ -40,14 +41,16 @@
     align-items: center;
     width: 80%;
     font-family: $fuenteprincipal;
+    transition: all 600ms;
     .all-filters{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 50%;
+        width: 800px;
         justify-content: space-around;
+        transition: all 600ms;
         .all-options{
-            width: 30%;
+            width: 35%;
             text-align: center;
 
             .filter-text{
@@ -65,17 +68,12 @@
                     align-items: center;
                     width: 50%;
                     cursor: pointer;
-                    h1{
-                    }
-                    .dc{
-                      filter: grayscale(100%);
-                    }
                     .marvel{
-                        width: 100%;
+                      width: 140px;
                     }
                     
                     img{
-                      width: 70%;
+                      height: 70px;
                       padding-bottom:5%;
                       filter: grayscale(100%);
                       transition: filter 0.3s ease-in-out;
@@ -116,7 +114,6 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2% 3% 0;
     font-family: $fuenteprincipal;
     justify-content: space-between;
     .character{
@@ -127,6 +124,7 @@
       background-position: center center;
       background-repeat: no-repeat;
       width: 325px;
+      height: 650px;
       align-items: center;
       margin-bottom: 6%;
       margin-right: 2%;
@@ -134,6 +132,7 @@
       img{
         height: 550px;
         padding-bottom: 1%;
+        transition: all 600ms;
         
       }
       h1{
@@ -143,10 +142,169 @@
       }
       &:hover{
         cursor: pointer;
+        img{
+          transform: scale(1.1);
+          transition: all 600ms;
+        }
       }
     }
     .character.dc{
       background-image: url("/src/assests/images/dc-fondo.jpg");
+    }
+  }
+}
+
+
+@media(max-width:1350px){
+  .filters{
+    flex-direction: column-reverse;
+    transition: all 600ms;
+    .all-filters{
+      padding-bottom: 2%;
+      transition: all 600ms;
+        .all-options{
+
+            .filter-text{
+            }
+            .filter-options{
+                
+                .filter-option{
+                    .marvel{
+
+                    }
+                    
+                    img{
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+}
+
+@media(max-width:682px){
+  .filters{
+    .all-filters{
+      width: 500px;
+      transition: all 600ms;
+        .all-options{
+          width: 45%;
+          transition: all 600ms;
+            .filter-text{
+              font-size: 28px;
+              transition: all 600ms;
+            }
+            .filter-options{
+                .filter-option{
+                  font-size: 12px;
+                    .marvel{
+
+                    }
+                    
+                    img{
+                      transform: scale(0.8);
+                      transition: all 600ms;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+.all-characters{
+
+  
+  .characters{
+    width: 90%;
+    transition: all 600ms;
+    .character{
+      width: 162.5px;
+      height: 325px;
+      transition: all 600ms;
+      img{
+        height: 275px;
+        transition: all 600ms;
+      }
+      h1{
+
+      }
+      &:hover{
+
+        img{
+
+        }
+      }
+    }
+    .character.dc{
+      
+    }
+  }
+}
+}
+
+@media(max-width:475px){
+  .filters{
+    .all-filters{
+      width: 325px;
+      transition: all 600ms;
+        .all-options{
+            .filter-text{
+              font-size: 25px;
+              padding: 0;
+              transition: all 600ms;
+            }
+            .filter-options{
+                .filter-option{
+                  font-size: 10px;
+                  transition: all 600ms;
+                    .marvel{
+
+                    }
+                    
+                    img{
+                      transform: scale(0.6);
+                      transition: all 600ms;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.search-input {
+  width: 235px;
+  transition: all 600ms;
+}
+
+
+}
+
+@media(max-width:375px){
+  .all-characters{
+
+  
+    .characters{
+      .character{
+        margin-left: 25%;
+        img{
+        }
+        h1{
+  
+        }
+        &:hover{
+  
+          img{
+  
+          }
+        }
+      }
+      .character.dc{
+        
+      }
     }
   }
 }
